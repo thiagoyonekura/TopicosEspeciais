@@ -1,0 +1,93 @@
+<html>
+	<head>
+		<title>Condicionais</title>
+		<script>
+			var nome = 159;
+			console.log('Valor: ' + nome);
+			
+			if(nome == 159){
+				//Executar se verdadeiro
+				console.log("Valor igual a 159");
+			}else{
+				//Executar se falso
+				console.log("Valor NÃO igual a 159");
+			}
+			
+			if(nome == 160){
+				//Executar se verdadeiro
+				console.log("Valor igual a 160");
+			}else{
+				//Executar se falso
+				console.log("Valor NÃO igual a 160");
+			}
+			
+			let abacaxi = '123';
+			let morango = 123;
+			console.log("tipo de abacaxi: " + typeof abacaxi);
+			console.log("tipo de morango: " + typeof morango);
+			
+			
+			if(abacaxi == morango){
+				console.log("conteúdo de abacaxi é igual conteudo de  morango")
+			}else{
+				console.log("conteúdo de abacaxi NÃO é igual morango")
+			}
+			
+			if(abacaxi === morango){
+				console.log("conteudo e tipo iguais entre as variaveis");
+			}else{
+				console.log('conteudo e tipo NÃO iguais entre as variaveis');
+			}
+			
+			
+			if(morango >= 123){
+				console.log('O conteudo de morango é maior ou igual a 123');
+			}
+			
+			//Operador Ternário
+			abacaxi == morango ? console.log('é igual') : console.log('não igual');
+			var laranja = (abacaxi == morango) ? true : false;
+			
+			console.log('Valor de laranja: ' + laranja);
+			
+			console.log('<< Separação >>');
+			let fruta = 'Morango';
+			
+			if(fruta == 'Morango'){
+				console.log('A fruta possui a cor vermelha!');
+			}else if(fruta == 'Abacaxi'){
+				console.log('A fruta possui a cor amarela!');
+			}else if(fruta == 'Limão'){
+				console.log('A fruta possui a cor verde!');
+			}
+			
+			if(fruta == 'Morango'){
+				console.log('A fruta possui a cor vermelha!');
+			}
+			if(fruta == 'Abacaxi'){
+				console.log('A fruta possui a cor amarela!');
+			}
+			if(fruta == 'Limão'){
+				console.log('A fruta possui a cor verde!');
+			}
+			
+			console.log('Entrando no switch case!');
+			switch(fruta){
+				case 'Morango':
+					console.log('A fruta possui a cor vermelha!');
+					break;
+				case 'Abacaxi':
+					console.log('A fruta possui a cor amarela!');
+					break;
+				case 'Limão':
+					console.log('A fruta possui a cor verde!');
+					break;
+				default: 
+					console.log('Desculpa, fruta não econtrada!');
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Estruturas Condicionais</h1>
+	</body>
+</html>

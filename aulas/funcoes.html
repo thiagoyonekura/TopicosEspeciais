@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>Funções</title>
+		<script>
+			function primeira_funcao(){
+				console.log('Entrou na primeira função!');
+			}
+			
+			primeira_funcao();
+			
+			function soma_simples(valor_a, valor_b){
+				let resultado = (valor_a + valor_b);
+				console.log('O resultado da soma é: ' + resultado);
+			}
+			
+			let retorno_ss = soma_simples(10, 20);
+			console.log('Retorno de SS: ' + retorno_ss);
+			
+			function subtracao(valor_a, valor_b){
+				let resultado = (valor_a - valor_b);
+				return resultado;
+			}
+			
+			function soma(valor_a, valor_b){
+				return (valor_a + valor_b);
+			}
+			
+			let r = subtracao(20, 10);
+			console.log('O resultado da subtração é: ' + r);
+			
+			function operacao_basica(operacao, valor_a, valor_b){
+				if(operacao == '+'){
+					return soma(valor_a, valor_b);
+				}else if(operacao == '-'){
+					return subtracao(valor_a, valor_b);
+				}
+			}
+			
+			let vl1 = 200, vl2 = 100;
+			let res = operacao_basica('+', vl1, vl2);
+			console.log('Resultado da OB: ' + res);
+			
+			res = operacao_basica('-', vl1, vl2);
+			console.log('Resultado da OB: ' + res);
+			
+		</script>
+	</head>
+
+	<body>
+		<h1>Funções</h1>
+	</body>
+</html>

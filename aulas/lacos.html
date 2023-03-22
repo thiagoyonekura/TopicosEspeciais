@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<title>Laços de repetições</title>
+		<script>
+			for(var i = 1; i <= 10; i++){
+				//iteração
+				
+				console.log('O valor de i é: ' + i);
+			}
+
+			console.log('..:: final ::..');
+			for(var i = 10; i >= 0; i--){
+				console.log('O valor de i é: ' + i);
+			}
+			console.log('..:: Separação ::..');
+			for(let i = 0; i <= 9; ){
+				console.log('O valor de i é: ' + i);
+				i++;
+			}
+			
+			console.log('..:: for diferentão ::..');
+			let cont = 0;
+			//Definição das variáveis
+			//Condição de execução
+			//Incremento/decremento das variáveis
+			for(;;){
+				console.log('O valor de cont é: ' + cont);
+				if(cont == 10) break;
+				cont++;
+			}
+			console.log('..:: for quebrado ::..');
+			for(cont = 0; cont < 10; cont++){
+				if(cont == 5) continue;
+				console.log('O valor de cont é: ' + cont);
+			}
+			
+			console.log('..:: while ::..');
+			cont = 0;
+			while(cont < 15){
+				console.log('O valor de cont é: ' + cont);
+				cont++
+			}
+			
+			while(true){
+				if(cont == 500) break;
+				console.log('Executando while!');
+				cont++;
+			}
+			
+			console.log('..:: do while ::..')
+			cont = 1;
+			do{
+				console.log('Valor de cont: ' + cont);
+				cont++;
+			}while(cont <= 20);
+		</script>
+	</head>
+	<body>
+		<h1>Laços de repetições</h1>
+	</body>
+</html>
